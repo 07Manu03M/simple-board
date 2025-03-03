@@ -85,22 +85,41 @@ body{
 }
 .barra_email{
     background: transparent;
-    border: 2px solid var(--color-6);
-    border-radius: 5px;
+    width: 100%;
     height: 60%;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
-.barra_email p{
+.barra_email input{
     background: transparent;
-    height: 50%;
-    width: 40%;
-    display: flex;
-    align-items: center;
-    margin-left: 2%;
-    color: var(--color-3);
+    border: 2px solid rgba(0, 0, 0, .3);
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.barra_email input:focus{
+    border-color: dodgerblue;
+}
+.barra_email label{
+    background: transparent;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
     font-size: 12px;
-    font-family: "Montserrat-Regular";
+    color: var(--color-2);
+    font-family: "Montserrat-Medium";
+    transition: all .3s ease-in-out;
+}
+.isEmpty + label{
+    top: 0px;
+    background: white;
+    padding: 0 5px;
+    color: dodgerblue;
+    font-size: 10px;
+    font-family: "Montserrat-Medium";
 }
 .div_contraseña {
     background: transparent;
@@ -118,22 +137,41 @@ body{
 }
 .barra_contra{
     background: transparent;
-    border: 2px solid var(--color-6);
-    border-radius: 5px;
+    width: 100%;
     height: 60%;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
-.barra_contra p{
+.barra_contra input{
     background: transparent;
-    display: flex;
-    align-items: center;
-    height: 50%;
-    width: 40%;
-    margin-left: 2%;
-    color: var(--color-3);
+    border: 2px solid rgba(0, 0, 0, .3);
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.barra_contra input:focus{
+    border-color: dodgerblue;
+}
+.barra_contra label{
+    background: transparent;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3%;
     font-size: 12px;
-    font-family: "Montserrat-Regular";
+    color: var(--color-2);
+    font-family: "Montserrat-Medium";
+    transition: all .3s ease-in-out;
+}
+.isempty + label{
+    top: 0px;
+    background: white;
+    padding: 0 5px;
+    color: dodgerblue;
+    font-size: 10px;
+    font-family: "Montserrat-Medium";
 }
 
 .barra_singin{
