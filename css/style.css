@@ -171,3 +171,142 @@ body{
     font-size: 14px;
     font-family: "Montserrat-Medium";
 }
+
+
+/* ADAPTACION PARA PC */
+
+@media screen and (min-width: 2560px){
+    .caja_main{
+        background: var(--color-1);
+        padding: 1px;
+        width: 25%;
+        height: 850px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 7%;
+        border-radius: 20px;
+    }
+}
+
+/* ADAPTACION TABLET */
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .caja_main{
+        width: 60%;
+        height: 500px;
+        gap: 7%;
+    } 
+}
+
+
+/* ADAPTACION MOVIL L*/
+
+@media screen and (min-width: 430px) and (max-width: 559px) {
+    .caja_main{
+        width: 85%;
+        height: 500px;
+        gap: 5%;
+    } 
+
+    .div_titulo {
+        width: 80%;
+        height: 7%;
+    }
+    .div_titulo h1{
+        font-size: 25px;
+    }
+    .forgot_password {
+        width: 90%;
+    }
+    .forgot_password span:nth-child(1){
+        font-size: 14px;
+    }
+    .forgot_password span:nth-child(2){
+        font-size: 14px;
+    }
+}
+
+/* ADAPTACION MOVIL M*/
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .caja_main{
+        padding: 1px;
+        width: 85%;
+        height: 500px;
+        gap: 5%;
+    } 
+
+    .div_titulo {
+        margin-top: 8%;
+        padding: 1px;
+        width: 80%;
+        height: 7%;
+    }
+    .div_titulo h1{
+        padding-right: 5px;
+        font-size: 23px;
+    }
+    .div_signin {
+        height: 10%;
+        padding: 1px;
+        gap: 10%;
+    }
+    .barra_contra p{
+        height: 50%;
+        width: 40%;
+        margin-left: 2%;
+        font-size: 11px;
+    }
+}
+
+/* ADAPTACION MOVIL S*/
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .caja_main{
+        padding: 1px;
+        width: 85%;
+        height: 400px;
+        gap: 7%;
+    } 
+
+    .div_titulo {
+        margin-top: 8%;
+        padding: 1px;
+        width: 80%;
+        height: 7%;
+    }
+    .div_titulo h1{
+        padding-right: 5px;
+        font-size: 19px;
+    }
+    .div_signin {
+        height: 10%;
+        padding: 1px;
+        gap: 10%;
+    
+    }
+    .div_signin span{
+        font-size: 19px;
+        width: 30%;
+    }
+    .div_signin p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .barra_email p{
+        font-size: 10px;
+    }
+    .barra_contra p{
+        font-size: 9px;
+    }
+    .forgot_password span:nth-child(1){
+        font-size: 10px;
+    }
+    .forgot_password span:nth-child(2){
+        font-size: 10px;
+    }
+}
+
+
+
