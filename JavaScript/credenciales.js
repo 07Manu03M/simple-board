@@ -3,8 +3,6 @@ const ENV= async()=>{
     let data= await peticion.json();
     /* console.log(data); */
     return data
-    
-    
 }
 
 export const validation = (users, data)=>{
@@ -12,15 +10,11 @@ export const validation = (users, data)=>{
         if (users[i].user === data.email) {
             if (users[i].PWD === data.pasword){
                 const {USER:email_user, ROL:type_user} = users[i];
-                window.location.href = "./example.html";
-                alert("INICIO DE SESION EXITOSO")
                 return {status:200, email_user, type_user}
             }
-            alert("CONTRASEÑA INCORRECTA");
-            return{status:401, message: "contraseña incorrecta"};
+            else return{status:401, message: "contraseña incorrecta"};
         }
     }
-    alert("USUARIO INCORRECTO")
     
     return {status: 404, message: "Usuario incorrecto"}
 }

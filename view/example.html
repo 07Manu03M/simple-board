@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="user-info">
+                <img src="profile.jpg" alt="User Image">
+                <h3>Karthi Madesh</h3>
+                <span class="role">Admin</span>
+            </div>
+            <nav class="menu">
+                <a href="#" class="active">🏠 Home</a>
+                <a href="#">📚 Course</a>
+                <a href="#">🎓 Students</a>
+                <a href="#">💰 Payment</a>
+                <a href="#">📊 Report</a>
+                <a href="#">⚙️ Settings</a>
+            </nav>
+            <button class="logout">🚪 Logout</button>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <input type="text" placeholder="Search...">
+                <span class="notification">🔔</span>
+            </header>
+
+            <section class="stats">
+                <div class="card students">
+                    <h4>Students</h4>
+                    <p>243</p>
+                </div>
+                <div class="card courses">
+                    <h4>Course</h4>
+                    <p>13</p>
+                </div>
+                <div class="card payments">
+                    <h4>Payments</h4>
+                    <p><b>INR 556,000</b></p>
+                </div>
+                <div class="card users">
+                    <h4>Users</h4>
+                    <p>3</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

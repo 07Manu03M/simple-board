@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr;  
+
+}
+.sidebar {
+    background: #f5f1eb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.role {
+    color: orange;
+    font-size: 14px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.menu a.active {
+    background: orange;
+    color: white;
+    border-radius: 5px;
+}
+
+.logout {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+}
+
+.students { background: #e3f2fd; }
+.courses { background: #fce4ec; }
+.payments { background: #fff9c4; }
+.users { background: #ffeb3b; }
