@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Board</title>
+    <title>Simple-Board</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="JavaScript/main.js" async></script>
 </head>
 <body>
-    <form id="form__login" action="?" method="get">
-        <div class="div__title">
+    <dialog id="dialog__login" class="dialog">
+        <div class="dialog__header">
+            <span id="dialog__login_close">X</span>
+        </div>  
+        <div class="dialog__main" id="dialog__message"></div>
+        <div class="dialog__footer"></div>
+    </dialog>
+    <main class="caja_main">
+        <div class="div_titulo">
             <h1>CRUD OPERATIONS</h1>
-            <strong>Sign In</strong>
+        </div>
+        <div class="div_signin">
+            <span>SIGN IN</span>
             <p>Enter your credentials to access your account</p>
         </div>
-        <div class="div__input">
-            <div>
-                <label>Email</label>
-                <input type="email" name="email" required placeholder="Enter your email" >
-            </div>
-            <div>
-                <label>Password</label>
-                <input type="password" name="password" required placeholder="Enter your password" >
-            </div>
+        <section class="section__form">
+            <form action="" id="form__login" class="formLogin">
+                <div class="div__email">
+                    <label for="email">Email</label>
+                    <input name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="div__pasword">
+                    <label for="email">Pasword</label>
+                    <input type="password" name="pasword" placeholder="Enter your pasword" required>
+                </div>
+                <div class="div__sign">
+                    <button class="sign__button">SING IN</button>
+                </div>
+            </form>
+        </section>
+        <div class="forgot_password">
+            <span>Forgot your password?</span>
+            <a href="JavaScript/main.js">Resert Password</a>
         </div>
-        <div class="div__button">
-            <input type="submit" value="SIGN IN">
-            <span>Forgot your password? <a href="#">Reset Password</a></span>
-        </div>
-    </form>
+    </main>
 </body>
 </html>
