@@ -5,5 +5,39 @@
     box-sizing: border-box;
 }
 
+#form__login{
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div__{
+    background: violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
+.div__input{
+    background: blue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div__input div{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.div__button{
+    background: beige;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
