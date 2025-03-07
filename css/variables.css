@@ -1,3 +1,17 @@
 :root{
     --color-1: #fff;
+    --color-2: #F2EAE1;
+    --color-3: #FEAF00;
+    --color-4: #000;
+    --color-5: rgba(255, 166, 0, 0.514);
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url(../storage/font/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-medium";
+    src: url(../storage/font/Montserrat/static/Montserrat-Medium.ttf);
 }
