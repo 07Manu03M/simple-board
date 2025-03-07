@@ -124,7 +124,7 @@ body{
     padding-left: 2%;
     outline: none;
     width: 100%;
-    height: 55%;
+    height: 65%;
     box-shadow: none;
     font-size: 12px;
     color: var(--color-7);
@@ -156,7 +156,7 @@ body{
     border-radius: 4px;
     padding-left: 2%;
     outline: none;
-    height: 55%;
+    height: 65%;
     box-shadow: none;
     font-size: 12px;
     color: var(--color-);
@@ -205,6 +205,195 @@ body{
     color: var(--color-4);
     font-size: 14px;
     font-family: "Montserrat-Medium";
+}
+
+
+/***************************** RESPONSIVE SECTION :D ********************************/
+
+/* PC DESING RESPONSIVE */
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+    .caja_main{
+        background: var(--color-1);
+        padding: 1px;
+        width: 23%;
+        height: 750px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 7%;
+        border-radius: 20px;
+    }
+}
+
+/* LAPTOP DESING RESPONSIVE */
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .caja_main{
+        width: 30%;
+        height: 500px;
+        gap: 7%;
+    } 
+    .div_titulo {
+        margin-top: 8%;
+        padding: 1px;
+        width: 82%;
+        height: 7%;
+    }
+    .div_titulo h1{
+        padding-right: 5px;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+    }
+    .div_signin {
+        height: 10%;
+        padding: 1px;
+        gap: 10%;
+    }
+    .forgot_password {
+        background: transparent;
+        padding: 1px;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .forgot_password span:nth-child(1){
+        background: transparent;
+        color: var(--color-2);
+        font-size: 14px;
+        font-family: "Montserrat-Medium";
+    }
+    .forgot_password a{
+        background: transparent;
+        color: var(--color-4);
+        font-size: 14px;
+        font-family: "Montserrat-Medium";
+    }
+}
+
+
+/* ADAPTACION TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .caja_main{
+        width: 45%;
+        height: 500px;
+        gap: 7%;
+    } 
+    .div_titulo h1{
+        padding-right: 5px;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+    }
+    .forgot_password{
+        width: 90%;
+    }
+    .forgot_password span:nth-child(1){
+        font-size: 15px;
+    }
+    .forgot_password a{
+        font-size: 15px;
+    }
+
+}
+
+/* ADAPTACION MOVIL M*/
+
+@media screen and (min-width: 375px) and (max-width: 430px) {
+    .caja_main{
+        padding: 1px;
+        width: 85%;
+        height: 500px;
+        gap: 8%;
+    } 
+
+    .div_titulo {
+        margin-top: 8%;
+        padding: 1px;
+        width: 80%;
+        height: 7%;
+    }
+    .div_titulo h1{
+        padding-right: 5px;
+        font-size: 23px;
+        display: flex;
+        align-items: center;
+    }
+    .div_signin {
+        width: 95%;
+        height: 10%;
+        padding: 1px;
+        gap: 10%;
+        text-align: center;
+    }
+    .barra_contra p{
+        height: 50%;
+        width: 40%;
+        margin-left: 2%;
+        font-size: 11px;
+    }
+    .forgot_password{
+        width: 90%;
+    }
+    .forgot_password span:nth-child(1){
+        font-size: 14px;
+    }
+    .forgot_password a{
+        font-size: 14px;
+    }
+}
+
+/* ADAPTACION MOVIL S*/
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .caja_main{
+        padding: 1px;
+        width: 85%;
+        height: 400px;
+        gap: 8%;
+    } 
+
+    .div_titulo {
+        margin-top: 8%;
+        padding: 1px;
+        width: 80%;
+        height: 7%;
+    }
+    .div_titulo h1{
+        padding-right: 5px;
+        font-size: 19px;
+    }
+    .div_signin {
+        height: 10%;
+        padding: 1px;
+        gap: 10%;
+    
+    }
+    .div_signin span{
+        font-size: 19px;
+        width: 30%;
+    }
+    .div_signin p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .barra_email p{
+        font-size: 10px;
+    }
+    .barra_contra p{
+        font-size: 9px;
+    }
+    .forgot_password{
+        width: 100%;
+    }
+    .forgot_password span:nth-child(1){
+        font-size: 12px;
+    }
+    .forgot_password a{
+        font-size: 12px;
+    }
 }
 
 
