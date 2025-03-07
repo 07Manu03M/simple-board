@@ -5,6 +5,6 @@ export const dialogMessage =(response)=>{
         dialog__login.showModal()
         dialog__message.innerHTML = response.message;
     }else{
-        location.href="view/example.html"
+        location.href="view/dashboard.html"
     }
 }

@@ -6,6 +6,9 @@
     --color-5: #F8D442;
     --color-6: #E5E5E5;
     --color-7: #000;
+    --color-8: rgba(255, 0, 0, 0.582);
+    --color-9: rgb(105, 0, 0);
+
 }
 
 @font-face {
@@ -30,5 +33,5 @@
 
 @font-face {
     font-family: "Montserrat-Mixed";
-    src: url("../storage/font/Montserrat/static/");
+    src: url("../storage/font/Montserrat/static/Montserrat-ExtraLight.ttf");
 }
