@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+    <div class="barra_lateral ">
+        <div class="nombre_pagina">
+            <span>CRUD OPERATIONS</span>
+        </div>
+        <section class="section_info">
+            <img src="../storage/img/pexels-photo-2379004 1.png">
+            <span>Karthi Madesh</span>
+            <p>Admin</p>
+        </section>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/home-lg-alt 1.svg">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/bookmark 1.svg">
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/graduation-cap 1.svg">
+                        <span>Students</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/usd-square 1.svg">
+                        <span>Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/file-chart-line 1.svg">
+                        <span>Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/sliders-v-square 1.svg">
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="../index.html">
+            <div class="sign-out">
+                <span>Logout</span>
+                <img src="../storage/img/sign-out-alt 1.png">
+            </div>
+        </a>
+    </div>
+
+    
+    <main>
+        <div class="header">
+            <div class="flecha">
+                <img id="flechita" src="../storage/img/caret-circle-down 1.svg" alt="">
+            </div>
+            <div class="div_search">
+                <div class="Search">
+                    <p>Search</p>
+                    <img src="../storage/img/search 1.svg" alt="">
+                </div>
+                <div class="campanita">
+                    <img src="../storage/img/bell 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="div__container">
+            <div class="div__header">
+                <h2>Students List</h2>
+                <button class="button__add" id="add__student">ADD NEW STUDENT</button>
+            </div>
+            <dialog id="dialog__add_student">
+                <div class="div__header">
+                    <span id="dialog__close">x</span>
+                </div>
+                <div class="div__main">
+                    <form action="?" method="post" id="form__student">
+                        <div>
+                            <label>Name</label>
+                            <input type="text"  name="name" value="breyner">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" name="Email" value="breyner@gmail.com">
+                        </div>
+                        <div>
+                            <label>Phone</label>
+                            <input type="text" name="Phone" pattern="[0-9]+" value="123123123" >
+                        </div>
+                        <div>
+                            <label>Enroll Number</label>
+                            <input type="number" name="enroll__number" value="12312312312">
+                        </div>
+                        <div>
+                            <label>Date of Admission</label>
+                            <input type="date" name="date_of_admision">
+                        </div>
+                        <input type="submit" value="Guardar">
+                    </form>
+                </div>
+                <div class="div__footer">
+
+                </div>
+            </dialog>
+            <dialog id="dialog__student_edit">
+                <div class="dialog__header">
+                    <span id="dialog__close_edit">x</span>
+                </div>
+                <div class="dialog__main">
+                    <form id="form__student_edit" action="?" method="post">
+                        <div hidden>
+                            <label>Id</label>
+                            <input type="number" pattern="[0-9]+" name="id" >
+                        </div>
+                        <div>
+                            <label>Name</label>
+                            <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+" name="name">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div>
+                            <label>Phone</label>
+                            <input type="text" pattern="[0-9]+" max="10" name="phone">
+                        </div>
+                        <div>
+                            <label>Enroll Number</label>
+                            <input type="number" name="enroll_number">
+                        </div>
+                        <!-- <div>
+                            <label>Date of Admission</label>
+                            <input type="date" name="date_of_admission">
+                        </div> -->
+                    </form>
+                </div>
+                <div class="dialog__footer">
+                    <input type="submit" form="form__student_edit" value="Actualizar">
+                </div>
+            </dialog>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Enroll Number</th>
+                        <th>Date of Admission</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table__student">
+    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script type="module" src="../JavaScript/student.js"></script>
+    <script src="../javascript/lateral.js"></script>
+</body>
+</html>
