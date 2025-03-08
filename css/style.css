@@ -28,6 +28,7 @@ dialog{
     justify-content: flex-end;
     font-size: 30px;
     font-family: "Montserrat-Mixed";
+    cursor: pointer;
 }
 .dialog__header span{
     background: var(--color-8);
@@ -45,7 +46,7 @@ dialog{
     background: var(--color-1);
     margin: auto;
     padding: 1px;
-    width: 25%;
+    width: 30%;
     height: 550px;
     display: flex;
     align-items: center;
