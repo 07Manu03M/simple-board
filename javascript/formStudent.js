@@ -123,9 +123,10 @@ export const showRowsTable = (DB) => {
         localStorage.setItem("student", JSON.stringify(DB)); // Corregido
         const row = table__student.querySelectorAll("tr")[id];
         row.children[1].textContent = data.name;
-        row.children[2].textContent = data.email;
-        row.children[3].textContent = data.phone;
-        row.children[4].textContent = data.enroll_number;
+        row.children[2].textContent = data.Email;
+        row.children[3].textContent = data.Phone;
+        row.children[4].textContent = data.enroll__number;
+        row.children[5].textContent = data.date_of_admision;
     
         return { status: 200, message: `Se actualizó con éxito a ${data.name} `};
     }; 

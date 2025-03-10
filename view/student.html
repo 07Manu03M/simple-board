@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="../css/student.css">
 </head>
 <body>
+
+<!---------------------- MENU  LATERAL ------------------->
+
     <div class="barra_lateral ">
+
+<!--------------------- ENCABEZADO MENU ------------------------>
+
         <div class="nombre_pagina">
             <span>CRUD OPERATIONS</span>
         </div>
+
+<!-------------------- INFORMACION MENU ----------------------->
+
         <section class="section_info">
             <img src="../storage/img/pexels-photo-2379004 1.png">
             <span>Karthi Madesh</span>
             <p>Admin</p>
         </section>
+
+<!----------------------- OPCIONES DE MENU ---------------------->
+
         <nav class="navegacion">
             <ul>
                 <li>
@@ -56,6 +68,9 @@
                 </li>
             </ul>
         </nav>
+
+<!--------------------------- CERRAR SESION MENU ------------------->
+
         <a href="../index.html">
             <div class="sign-out">
                 <span>Logout</span>
@@ -64,15 +79,22 @@
         </a>
     </div>
 
-    
+<!----------------------- MAIN SECTION  ------------------>
+
     <main>
         <div class="header">
+
+<!----------------- FLECHA DEL MENU LATERAL ------------------>
+
             <div class="flecha">
                 <img id="flechita" src="../storage/img/caret-circle-down 1.svg" alt="">
             </div>
+
+<!---------------------- HEADER BUSQUEDA ------------------------->
+
             <div class="div_search">
                 <div class="Search">
-                    <p>Search</p>
+                    <p>Search...</p>
                     <img src="../storage/img/search 1.svg" alt="">
                 </div>
                 <div class="campanita">
@@ -80,38 +102,50 @@
                 </div>
             </div>
         </div>
+
+<!----------------------- CAJA CONTENEDORA ADD STUDENT -------------------->
+
         <div class="div__container">
             <div class="div__header">
                 <h2>Students List</h2>
-                <button class="button__add" id="add__student">ADD NEW STUDENT</button>
+                <div class="add_student">
+                    <img src="../storage/img/sort 1.svg" alt="">
+                    <button class="button__add" id="add__student">ADD NEW STUDENT</button>
+                </div>
             </div>
-            <dialog id="dialog__add_student">
-                <div class="div__header">
+
+<!-------------------------- DIALOG ADD STUDENT ------------------------------->
+
+            <dialog class="dialog_add" id="dialog__add_student">
+                <div class="div_header">
                     <span id="dialog__close">x</span>
                 </div>
+
+<!----------------------- INFORMACION DEL ESTUDIANTE -------------------------->
+
                 <div class="div__main">
-                    <form action="?" method="post" id="form__student">
-                        <div>
-                            <label>Name</label>
-                            <input type="text"  name="name" value="breyner">
+                    <form action="?" method="post" id="form__student" class="form_add">
+                        <div class="name_div">
+                            <label>Name:</label>
+                            <input type="text"  name="name" placeholder="Ejem. Pepito Perez">
                         </div>
-                        <div>
-                            <label>Email</label>
-                            <input type="email" name="Email" value="breyner@gmail.com">
+                        <div class="email_div">
+                            <label>Email:</label>
+                            <input type="email" name="Email" placeholder="Ejem. ejemplo@gmail.com">
                         </div>
-                        <div>
-                            <label>Phone</label>
-                            <input type="text" name="Phone" pattern="[0-9]+" value="123123123" >
+                        <div class="phone_div">
+                            <label>Phone:</label>
+                            <input type="text" name="Phone" pattern="[0-9]+" placeholder="Ejem. 1234567890">
                         </div>
-                        <div>
-                            <label>Enroll Number</label>
-                            <input type="number" name="enroll__number" value="12312312312">
+                        <div class="enroll_div">
+                            <label>Enroll Number:</label>
+                            <input type="number" name="enroll__number" placeholder="Ejem. 1234567890">
                         </div>
-                        <div>
-                            <label>Date of Admission</label>
-                            <input type="date" name="date_of_admision">
+                        <div class="date_div">
+                            <label>Date of Admission:</label>
+                            <input type="date" name="date_of_admision" placeholder="Ejem. 2025/03/09">
                         </div>
-                        <input type="submit" value="Guardar">
+                        <input class="subm_div" type="submit" value="Guardar">
                     </form>
                 </div>
                 <div class="div__footer">
@@ -134,20 +168,20 @@
                         </div>
                         <div>
                             <label>Email</label>
-                            <input type="email" name="email">
+                            <input type="email" name="Email">
                         </div>
                         <div>
                             <label>Phone</label>
-                            <input type="text" pattern="[0-9]+" max="10" name="phone">
+                            <input type="text" pattern="[0-9]+" max="10" name="Phone">
                         </div>
                         <div>
                             <label>Enroll Number</label>
-                            <input type="number" name="enroll_number">
+                            <input type="number" name="enroll__number">
                         </div>
-                        <!-- <div>
+                        <div>
                             <label>Date of Admission</label>
                             <input type="date" name="date_of_admission">
-                        </div> -->
+                        </div>
                     </form>
                 </div>
                 <div class="dialog__footer">
