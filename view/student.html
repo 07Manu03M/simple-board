@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+
+<!---------------------- MENU  LATERAL ------------------->
+
+    <div class="barra_lateral ">
+
+<!--------------------- ENCABEZADO MENU ------------------------>
+
+        <div class="nombre_pagina">
+            <span>CRUD OPERATIONS</span>
+        </div>
+
+<!-------------------- INFORMACION MENU ----------------------->
+
+        <section class="section_info">
+            <img src="../storage/img/pexels-photo-2379004 1.png">
+            <span>Karthi Madesh</span>
+            <p>Admin</p>
+        </section>
+
+<!----------------------- OPCIONES DE MENU ---------------------->
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/home-lg-alt 1.svg">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/bookmark 1.svg">
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/graduation-cap 1.svg">
+                        <span>Students</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/usd-square 1.svg">
+                        <span>Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/file-chart-line 1.svg">
+                        <span>Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/sliders-v-square 1.svg">
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+<!--------------------------- CERRAR SESION MENU ------------------->
+
+        <a href="../index.html">
+            <div class="sign-out">
+                <span>Logout</span>
+                <img src="../storage/img/sign-out-alt 1.png">
+            </div>
+        </a>
+    </div>
+
+<!----------------------- MAIN SECTION  ------------------>
+
+    <main>
+        <div class="div__container">
+
+<!---------------------- FLECHA DEL MENU LATERAL -------------------->
+
+            <div class="flecha">
+                <img id="flechita" src="../storage/img/caret-circle-down 1.svg" alt="">
+            </div>
+
+<!------------------------ HEADER BUSQUEDA -------------------------->
+
+            <div class="div_search">
+                <div class="Search">
+                    <p>Search...</p>
+                    <img src="../storage/img/search 1.svg" alt="">
+                </div>
+                <div class="campanita">
+                    <img src="../storage/img/bell 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+<!--------------------------- BOTON ADD STUDEN ------------------------>
+            
+            <div class="div__header">
+                <h2>Students List</h2>
+                <div class="add_student">
+                    <img src="../storage/img/sort 1.svg" alt="">
+                    <button class="button__add" id="add__student">ADD NEW STUDENT</button>
+                </div>
+            </div>
+
+<!------------------------- DIALOG ADD STUDENT ---------------------------------->
+
+            <dialog class="dialog_add" id="dialog__add_student">
+                <div class="div_header" class="dialog__header">
+                    <span id="dialog__close">x</span>
+                </div>
+
+<!---------------------- INFORMACION DEL ESTUDIANTE ------------------>
+
+                <div class="dialog__main">
+                    <form id="form__student" action="?" method="post" class="form_add">
+                        <div class="name_div">
+                            <label>Name</label>
+                            <input type="text" placeholder="Ejem. Pepito Perez" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+" name="name">
+                        </div>
+                        <div class="email_div">
+                            <label>Email</label>
+                            <input type="email" placeholder="Ejem. ejemplo@gmail.com" name="email" >
+                        </div>
+                        <div class="phone_div">
+                            <label>Phone</label>
+                            <input type="text" placeholder="Ejem. 1234567890" pattern="[0-9]+" max="10" name="phone">
+                        </div>
+                        <div class="enroll_div">
+                            <label>Enroll Number</label>
+                            <input type="number" placeholder="Ejem. 1234567890" name="enroll_number">
+                        </div>
+                        <div class="date_div">
+                            <label>Date of Admission:</label>
+                            <input type="date" name="date_of_admision" placeholder="Ejem. 2025/03/09">
+                        </div>
+                        <input class="subm_div" type="submit" form="form__student" value="Guardar">
+                    </form>
+                </div>
+                <div class="dialog__footer">
+
+                </div>
+            </dialog>
+
+<!----------------------------------- DIALOG EDIT STUDENT ------------------------------------>
+
+            <dialog class="dialog_add" id="dialog__student_edit">
+                <div class="div_header" class="dialog__header">
+                    <span id="dialog__close_edit">x</span>
+                </div>
+
+<!-------------------------------- DATOS ACTUALIZAR STUDENT ------------------------------------>
+
+                <div class="dialog__main">
+                    <form id="form__student_edit" action="?" method="post" class="form_add">
+                        <div hidden class="name_div">
+                            <label>Id</label>
+                            <input type="number" pattern="[0-9]+" name="id" >
+                        </div>
+                        <div class="email_div">
+                            <label>Name</label>
+                            <input type="text" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü ]+" name="name">
+                        </div>
+                        <div class="phone_div">
+                            <label>Email</label>
+                            <input type="email" name="email">
+                        </div>
+                        <div class="enroll_div">
+                            <label>Phone</label>
+                            <input type="text" pattern="[0-9]+" max="10" name="phone">
+                        </div>
+                        <div class="date_div">
+                            <label>Enroll Number</label>
+                            <input type="number" name="enroll_number">
+                        </div>
+                        
+                        <input class="subm_div" type="submit" form="form__student_edit" value="Actualizar">
+                    </form>
+                </div>
+                <div class="dialog__footer">
+                    
+                </div>
+            </dialog>
+
+<!-------------------------------- DIALOG DELETE STUDENT --------------------------------->
+
+            <dialog class="dialog_delete" id="dialog__student_delete">
+                <div class="dialog__header">
+                
+                </div>
+                <div class="dialog__mainsito">
+                    <form class="form_delete" id="form__student_delete" action="?" method="post">
+                        <h2>Deseas eliminar la informacion del estudiante</h2>
+                        <input class="input_delete" type="text" pattern="[0-9]+" name="id" hidden>
+                        <strong>"xxxxxxx"</strong>
+                    </form>
+                </div>
+                <div class="dialog__footer">
+                    <input class="confirmar" type="submit" data-action="delete" form="form__student_delete" value="Yes">
+                    <input class="cancelar" type="submit" data-action="close" form="form__student_delete" value="No">
+                </div>
+            </dialog>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Enroll Number</th>
+                        <th>Date of Admission</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table__student">
+                
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script type="module" defer src="../javascript/student.js"></script>
+    <script src="../javascript/lateral.js"></script>
+</body>
+</html>

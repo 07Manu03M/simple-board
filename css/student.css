@@ -1,0 +1,624 @@
+@import url(studentvariables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+    background: var(--color-9);
+}
+
+/*********************** BARRA LATERAL *******************/
+
+.barra_lateral{
+    position: fixed;
+    width: 245px;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--color-2);
+    transition: width 0.5s ease;
+
+}
+
+/***************** BARRA LATERAL OCULTA ****************/
+
+.mini_barra_lateral{
+    width: 0;
+}
+
+/*************** HEADER BARRA LATERAL ***************/
+.nombre_pagina{
+    /* background: red; */
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre_pagina span{
+    border-left: 3px solid var(--color-3);
+    padding-left: 5px;
+    height: 50%;
+    white-space: nowrap;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    font-family: "montserrat-bold";
+}
+
+.nombre_pagina span.oculto{
+    opacity: 0;
+}
+
+.oculto {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap; 
+    transition: opacity 0.3s ease, width 0.3s ease;
+    display: inline-block; 
+}
+
+/**************** INFORMACION DE ADMIN ***************/
+
+.section_info {
+    /* border: 5px solid red; */
+    display: flex;
+    gap: 3%;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 26%;
+    text-align: center;
+    margin-top: 10px;
+    transition: width 0.5s ease;
+}
+
+.section_info img {
+    /* border: 5px solid blueviolet; */
+    border-radius: 100%;
+    width: 70px; /* Ajusta según el tamaño deseado */
+    transition: width 0.5s ease;
+}
+
+.section_info img {
+    width: 115px; 
+    height: auto; 
+    transition: width 0.5s ease;
+    white-space: nowrap;
+}
+
+/**************** INFO BARRA OCULTA ***************/
+
+.mini_barra_lateral .section_info img {
+    transform: scale(0.5); 
+}
+
+.mini_barra_lateral .section_info span{
+    transform: scale(0.8); 
+}
+
+/****************** INFO BARRA LATERAL ****************/
+
+.section_info span{
+    /* border: 5px solid blue; */
+    font-size: 17px;
+    white-space: nowrap;
+    font-family: "montserrat-bold";
+    transition: width 0.5s ease;
+}
+.section_info span.oculto{
+    width: 0;
+}
+.section_info p{
+    /* border: 5px solid green; */
+    color: var(--color-3);
+    font-size: 14px;
+    font-family: "montserrat-medium";
+}
+
+/******************* NAVEGACION BARRA LATERAL ***************/
+
+.navegacion{
+    margin-top: 20%;
+    margin-bottom: 35%;
+}
+
+.barra_lateral .navegacion li{
+    /* border:  2px solid red; */
+    list-style: none;
+    display: flex;   
+    justify-content: center;
+    margin-bottom: 5%;
+    font-family: "montserrat-medium";
+}
+
+.barra_lateral .navegacion a{
+    /* border: 2px solid black; */
+    width: 90%;
+    height: 35px;
+    display:  flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra_lateral .navegacion a:hover{
+    background-color: var(--color-3);
+    color: var(--color-4);
+}
+.barra_lateral .navegacion img{
+    /* border: 2px solid blue; */
+    min-width: 10px;
+    font-size: 10px;
+    margin-right: 5%;
+}
+
+/************************ CERRAR SESION ************************/
+
+.barra_lateral .sign-out{
+    /* border: 2px solid black; */
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-4);
+    overflow: hidden;
+    margin-top: 20%;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 30px;
+    font-family: "montserrat-medium";
+}
+a{
+    text-decoration: none;
+}
+.barra_lateral .sign-out img{
+    font-size: 17px;
+}
+
+.barra_lateral .sign-out span{
+    margin-right: 10%;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.barra_lateral .sign-out:hover{
+    background: var(--color-3);
+}
+
+/******************* SECCION MAIN *********************/
+
+main{
+    /* background: blue; */
+    margin-left: 250px;
+    padding: 20px 20px 0 20px;
+    transition: margin-left 0.5s ease;
+}
+
+main.min-main{
+    margin-left: 10px;
+}
+
+/*********************** HEADER ****************/
+
+.div__container {
+    /* background: red; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.flecha {
+    /* background: rebeccapurple; */
+}
+.div__container .flecha img {
+    /* background: green; */
+    width: 25px;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+.div_search {
+    /* background: gold; */
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    width: 23%;
+}
+.Search {
+    /* background: palegreen; */
+    border: 2px solid var(--color-8);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 100%;
+}
+.Search p{
+    display: flex;
+    align-items: center;
+    /* background: skyblue; */
+    width: 80%;
+    font-family: "montserrat-regular";
+    color: var(--color-7);
+
+}
+.Search img{
+    /* background: pink; */
+    width: 10%;
+}
+.campanita {
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.campanita img{
+    /* background: seagreen; */
+    width: 80%;
+}
+
+.div__header {
+    /* background: red; */
+    margin-top: 3%;
+    font-family: "montserrat-bold";
+    font-size: 22px;
+}
+.div__header {
+    /* background: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.add_student{
+    /* background: red; */
+    display: flex;
+    width: 23%;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    align-items: center;
+}
+.add_student img{
+    /* background: blueviolet; */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button__add {
+    background-color: var(--color-3); /* Naranja */
+    color: white;
+    height: 100%;
+    border: none;
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5vh;
+    transition: background-color 0.3s;
+    font-family: "montserrat-medium";
+    font-size: 14px;
+}
+.button__add:hover {
+    background-color: #e55b00; /* Naranja más oscuro */
+}
+table {
+    width: 100%;
+    margin-top: 3vh;
+    border-collapse: separate; /* Permite separar bordes */
+    border-spacing: 0 10px;
+    background: transparent;
+}
+th, td {
+    background: var(--color-9);
+    padding: 1.5vh;
+    text-align: center;
+    font-size: 1.5vh;
+    border-top: 1px solid #ddd;
+}
+th {
+    font-size: 12px;
+    color: var(--color-6);
+    padding: 30px;
+    font-family: "montserrat-semibold";
+}
+td {
+    background-color: var(--color-1);
+    border-radius: 0;
+    border-top: none;
+    font-family: "montserrat-regular";
+    font-size: 14px;
+    height: 55px;
+}
+span {
+    cursor: pointer;
+    margin: 0 1vw;
+    font-size: 1.8vh;
+    transition: color 0.3s;
+}
+
+/* Redondear solo las esquinas de la tabla */
+tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+}
+
+tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+
+/************************************** DIALOGO DISEÑO **********************************/
+
+.dialog_add{
+    background: var(--color-11);
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    padding: 1%;
+    border: 2px solid var(--color-6);
+    border-radius: 20px;
+}
+
+.div_header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    width: 5%;
+    height: 5%;
+    margin-left: auto;
+}
+.div_header span{
+    color: var(--color-1);
+    font-size: 40px;
+    font-family: "montserrat-extralight";
+}
+.dialog__main{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    height: 95%;
+}
+.form_add{
+    background: transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* NAME SECTION */
+.name_div {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    gap: 15%;
+}
+.name_div label{
+    color: var(--color-6);
+    background: transparent;
+    font-size: 35px;
+    font-family: "montserrat-regular";
+}
+.name_div input{
+    background: transparent;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    padding: 1%;
+    border: 1px solid var(--color-10);
+    border-radius: 10px;
+    color: var(--color-10);
+}
+
+/* EMAIL SECTION */
+.email_div {
+    color: var(--color-6);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    gap: 15%;
+}
+.email_div label{
+    background: transparent;
+    font-size: 35px;
+    font-family: "montserrat-regular";
+}
+.email_div input{
+    background: transparent;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    padding: 1%;
+    border: 1px solid var(--color-10);
+    border-radius: 10px;
+    color: var(--color-10);
+}
+/* PHONE SECTION */
+.phone_div {
+    color: var(--color-6);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    gap: 15%;
+    color: var(--color-10);
+}
+.phone_div label{
+    background: transparent;
+    font-size: 35px;
+    font-family: "montserrat-regular";
+}
+.phone_div input{
+    background: transparent;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    padding: 1%;
+    border: 1px solid var(--color-10);
+    border-radius: 10px;
+    color: var(--color-10);
+}
+/* ENROLL SECTION */
+.enroll_div {
+    color: var(--color-6);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    gap: 15%;
+}
+.enroll_div label{
+    background: transparent;
+    font-size: 35px;
+    font-family: "montserrat-regular";
+}
+.enroll_div input{
+    background: transparent;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    padding: 1%;
+    border: 1px solid var(--color-10);
+    border-radius: 10px;
+    color: var(--color-10);
+}
+/* DATE SECTION */
+.date_div {
+    color: var(--color-6);
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+    gap: 15%;
+}
+.date_div label{
+    background: transparent;
+    font-size: 35px;
+    font-family: "montserrat-regular";
+}
+.date_div input{
+    color: var(--color-10);
+    padding: 1%;
+    background: transparent;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    border: 1px solid var(--color-10);
+    border-radius: 10px;
+    color: var(--color-10);
+}
+/* SUBMIT SECTION */
+.subm_div {
+    background: transparent;
+    color: var(--color-10);
+    height: 7%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 1%;
+    font-family: "montserrat-regular";
+    border: 1px solid var(--color-10);
+}
+.subm_div:hover{
+    background: var(--color-3);
+    color: var(--color-4);
+    border: 1px solid var(--color-4);
+}
+
+
+/******************************* DIALOG DELETE STUDENT *******************************/
+
+.dialog_delete {
+    border: 1px solid var(--color-10);
+    background: var(--color-11);
+    margin: auto;
+    height: 350px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.dialog__header {
+    background: var(--color-11);
+}
+.dialog__mainsito {
+    background: var(--color-11);
+    height: 270px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.form_delete {
+    background: var(--color-11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form_delete h2{
+    background: var(--color-11);
+    font-size: 40px;
+    text-align: center;
+    font-family: "montserrat-regular";
+    color: var(--color-6);
+}
+.form_delete input{
+    background: skyblue;
+}
+.form_delete strong{
+    color: var(--color-1);
+    background: var(--color-11);
+    font-size: 30px;
+    font-family: "montserrat-bold";
+}
+.dialog__footer {
+    background: var(--color-11);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+.confirmar {
+    border: 1px solid var(--color-10);
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    font-family: "montserrat-medium";
+}
+.cancelar {
+    border: 1px solid var(--color-10);
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    font-family: "montserrat-medium";
+}
+
+
