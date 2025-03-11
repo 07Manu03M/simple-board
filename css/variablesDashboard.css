@@ -1,0 +1,41 @@
+:root{
+    --color-1: #fff;
+    --color-2: #F2EAE1;
+    --color-3: #FEAF00;
+    --color-4: #000;
+    --color-11: #323232;
+    --color-5: rgba(255, 166, 0, 0.514);
+    --color-6: #ACACAC;
+    --color-10: #dcdcdc99;
+    --color-7: #C4C4C4;
+    --color-8: #E5E5E5;
+    --color-9: #F8F8F8;
+    --color-12:  #d3edff;
+    --color-13:  #ffe2f4;
+    --color-14:  #fef8d8;
+    --color-15:  #FEAF00;
+    --color-16:  #F8D442;
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url(../storage/font/Montserrat/static/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-medium";
+    src: url(../storage/font/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url(../storage/font/Montserrat/static/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: "montserrat-regular";
+    src: url(../storage/font/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "montserrat-extralight";
+    src: url("../storage/font/Montserrat/static/Montserrat-ExtraLight.ttf");
+}

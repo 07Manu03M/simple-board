@@ -3,11 +3,11 @@
     --color-2: #6C6C6C;
     --color-3: #CDCDCD;
     --color-4: #FEAF00;
-    --color-5: #F8D442;
+    --color-5: rgb(105, 0, 0);
     --color-6: #E5E5E5;
     --color-7: #000;
     --color-8: rgba(255, 0, 0, 0.582);
-    --color-9: rgb(105, 0, 0);
+    --color-9:  #F8D442;
 
 }
 
@@ -33,28 +33,5 @@
 
 @font-face {
     font-family: "Montserrat-Mixed";
-    src: url("../storage/font/Montserrat/static/Montserrat-ExtraLight.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-bold";
-    src: url(../storage/font/Montserrat/static/Montserrat-Bold.ttf);
-}
-
-@font-face {
-    font-family: "montserrat-medium";
-    src: url(../storage/font/Montserrat/static/Montserrat-Medium.ttf);
-}
-
-@font-face {
-    font-family: "montserrat-semibold";
-    src: url(../storage/font/Montserrat/static/Montserrat-SemiBold.ttf);
-}
-@font-face {
-    font-family: "montserrat-regular";
-    src: url(../storage/font/Montserrat/static/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: "montserrat-extralight";
     src: url("../storage/font/Montserrat/static/Montserrat-ExtraLight.ttf");
 }
