@@ -205,8 +205,9 @@ a{
 /******************* SECCION MAIN *********************/
 
 main{
+    /* background: blue; */
     margin-left: 250px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     transition: margin-left 0.5s ease;
 }
 
@@ -216,17 +217,18 @@ main.min-main{
 
 /*********************** HEADER ****************/
 
-.header {
+.div__container {
     /* background: red; */
     width: 100%;
     height: 40px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .flecha {
     /* background: rebeccapurple; */
 }
-.header .flecha img {
+.div__container .flecha img {
     /* background: green; */
     width: 25px;
     transform: rotate(180deg);
@@ -272,7 +274,7 @@ main.min-main{
     width: 80%;
 }
 
-.div__container {
+.div__header {
     /* background: red; */
     margin-top: 3%;
     font-family: "montserrat-bold";
@@ -393,7 +395,7 @@ tr:last-child td:last-child {
     font-size: 40px;
     font-family: "montserrat-extralight";
 }
-.div__main{
+.dialog__main{
     /* background: red; */
     display: flex;
     flex-direction: column;
@@ -550,3 +552,73 @@ tr:last-child td:last-child {
     color: var(--color-4);
     border: 1px solid var(--color-4);
 }
+
+
+/******************************* DIALOG DELETE STUDENT *******************************/
+
+.dialog_delete {
+    border: 1px solid var(--color-10);
+    background: var(--color-11);
+    margin: auto;
+    height: 350px;
+    width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.dialog__header {
+    background: var(--color-11);
+}
+.dialog__mainsito {
+    background: var(--color-11);
+    height: 270px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.form_delete {
+    background: var(--color-11);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form_delete h2{
+    background: var(--color-11);
+    font-size: 40px;
+    text-align: center;
+    font-family: "montserrat-regular";
+    color: var(--color-6);
+}
+.form_delete input{
+    background: skyblue;
+}
+.form_delete strong{
+    color: var(--color-1);
+    background: var(--color-11);
+    font-size: 30px;
+    font-family: "montserrat-bold";
+}
+.dialog__footer {
+    background: var(--color-11);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+.confirmar {
+    border: 1px solid var(--color-10);
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    font-family: "montserrat-medium";
+}
+.cancelar {
+    border: 1px solid var(--color-10);
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    font-family: "montserrat-medium";
+}
+
+
