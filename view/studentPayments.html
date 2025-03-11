@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Payments</title>
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+<body>
+    <div class="barra_lateral ">
+        <div class="nombre_pagina">
+            <span>CRUD OPERATIONS</span>
+        </div>
+        <section class="section_info">
+            <img src="../storage/img/pexels-photo-2379004 1.png">
+            <span>Karthi Madesh</span>
+            <p>Admin</p>
+        </section>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/home-lg-alt 1.svg">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/bookmark 1.svg">
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/graduation-cap 1.svg">
+                        <span>Students</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/usd-square 1.svg">
+                        <span>Payment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/file-chart-line 1.svg">
+                        <span>Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../storage/img/sliders-v-square 1.svg">
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="../index.html">
+            <div class="sign-out">
+                <span>Logout</span>
+                <img src="../storage/img/sign-out-alt 1.png">
+            </div>
+        </a>
+    </div>
+
+    <!----------------------- MAIN SECTION  ------------------>
+
+    <main>
+        <div class="div__container">
+
+<!---------------------- FLECHA DEL MENU LATERAL -------------------->
+
+            <div class="flecha">
+                <img id="flechita" src="../storage/img/caret-circle-down 1.svg" alt="">
+            </div>
+
+<!------------------------ HEADER BUSQUEDA -------------------------->
+
+            <div class="div_search">
+                <div class="Search">
+                    <p>Search...</p>
+                    <img src="../storage/img/search 1.svg" alt="">
+                </div>
+                <div class="campanita">
+                    <img src="../storage/img/bell 1.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+<!------------------------- VIEW STUDENT ---------------------------------------->
+
+        <div class="div_container">
+            <div class="div__header">
+                <h2>Payments Details</h2>   
+                <img src="../storage/img/sort 1.svg" alt="">
+            </div>
+            <dialog id="dialog__add_payment">
+                <div class="div__header">
+                    <span id="dialog__close_payment">x</span>
+                </div>
+                <div class="div__main">
+                    <form class="form_1" action="?" method="post" id="form__payment">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div>
+                            <label>Bill Number</label>
+                            <input type="text" name="bill_number">
+                        </div>
+                        <div>
+                            <label>Amount Paid</label>
+                            <input type="number" name="amount_paid">
+                        </div>
+                        <div>
+                            <label>Balance Amount</label>
+                            <input type="number" name="balance_amount">
+                        </div>
+                        <div>
+                            <label>Date</label>
+                            <input type="date" name="payment_date">
+                        </div>
+                        <input type="submit" value="Guardar">
+                    </form>
+                </div>
+                <div class="div__footer"></div>
+            </dialog>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Bill Number</th>
+                        <th>Amount Paid</th>
+                        <th>Balance Amount</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table__payments">
+                    <!-- Las filas de pagos se agregarán dinámicamente con JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="../javascript/lateral.js"></script>
+    <script type="module" src="../javascript/studentPayments.js.js"></script>
+</body>
+</html>
