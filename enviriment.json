@@ -1,0 +1,12 @@
+[
+    {
+        "user":"breyner@gmail.com",
+        "PWD":"1",
+        "type_user":"admin"
+    },
+    {
+        "user":"manuel@gmail.com",
+        "PWD":"12",
+        "type_user":"admin"
+    }
+]
